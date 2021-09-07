@@ -1,0 +1,11 @@
+.btn-master {
+  padding: 15px 50px;
+  font-weight: map-get($map: $font-weight, $key: medium);
+  border-radius: 56px;
+}
+
+.btn-yellow {
+  @extend .btn-master;
+  color: $dark-yellow;
+  background-color: $yellow;
+}

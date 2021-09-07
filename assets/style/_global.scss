@@ -1,0 +1,60 @@
+body {
+  background-color: $page-bg;
+
+  nav {
+    background-color: transparent !important;
+
+    .navbar-nav {
+      .nav-link {
+        font-size: 16px;
+        font-weight: map-get($map: $font-weight, $key: regular);
+        color: $light-green !important;
+        margin-left: 25px;
+      }
+      .active {
+        color: $yellow !important;
+        border-bottom: 2px;
+        border-color: $yellow;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 48px;
+    font-weight: map-get($map: $font-weight, $key: semi-bold);
+    color: $dark;
+    line-height: 65px;
+    text-transform: capitalize;
+  }
+
+  .std-text {
+    font-size: 22px;
+    font-weight: map-get($map: $font-weight, $key: regular);
+    color: $dark;
+  }
+
+  a.link-text {
+    font-size: 16px;
+    font-weight: map-get($map: $font-weight, $key: regular);
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $dark;
+    margin-top: 50px;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $grey !important;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $grey !important;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $grey !important;
+  }
+}

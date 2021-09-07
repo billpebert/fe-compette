@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
+* {
+  font-family: "Asap", sans-serif;
+}
+
+.btn-master, .btn-yellow {
+  padding: 15px 50px;
+  font-weight: 500;
+  border-radius: 56px;
+}
+
+.btn-yellow {
+  color: #986121;
+  background-color: #f2ad5f;
+}
+
+body {
+  background-color: #fafaff;
+}
+body nav {
+  background-color: transparent !important;
+}
+body nav .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b0c3c9 !important;
+  margin-left: 25px;
+}
+body nav .navbar-nav .active {
+  color: #f2ad5f !important;
+  border-bottom: 2px;
+  border-color: #f2ad5f;
+}
+body .heading {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0f1d37;
+  line-height: 65px;
+  text-transform: capitalize;
+}
+body .std-text, body section.jobs .card-jobs .card-heading .title, section.jobs .card-jobs .card-heading body .title, body section.intro ul.points li, section.intro ul.points body li {
+  font-size: 22px;
+  font-weight: 400;
+  color: #0f1d37;
+}
+body a.link-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #0f1d37;
+  margin-top: 50px;
+}
+body ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cacad2 !important;
+  opacity: 1;
+  /* Firefox */
+}
+body :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cacad2 !important;
+  opacity: 1;
+  /* Firefox */
+}
+body ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cacad2 !important;
+  opacity: 1;
+  /* Firefox */
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cacad2 !important;
+}
+body ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #cacad2 !important;
+}
+
+img.hero-background {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+
+section.hero {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+section.hero h1 {
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+section.hero img.illustration {
+  margin-top: 50px;
+  max-width: 725px;
+  height: 500px;
+}
+section.hero img.brand-partner {
+  margin-top: 50px;
+  max-width: 820px;
+}
+
+section.intro {
+  margin-top: 150px;
+}
+section.intro img.gallery-image {
+  max-width: 90%;
+}
+section.intro ul.points {
+  margin-top: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+section.intro ul.points li {
+  margin-bottom: 30px;
+}
+
+section.jobs {
+  margin: 150px 0;
+}
+section.jobs .card-jobs {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 0;
+  padding: 30px;
+  margin-top: 70px;
+}
+section.jobs .card-jobs .card-heading img {
+  max-width: 50px;
+  padding-right: 15px;
+}
+section.jobs .card-jobs .card-heading .title {
+  line-height: 25px;
+}
+section.jobs .card-jobs .card-heading .subtitle {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #cacad2;
+}
+section.jobs .card-jobs .price {
+  color: #10495c;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 30px;
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+section.jobs .card-jobs .bg-sky-blue {
+  color: #65d9e4;
+  background-color: #ebfafc;
+  text-transform: uppercase;
+  width: auto;
+  border-radius: 6px;
+  padding: 7px;
+}
+
+section.subscribe {
+  padding-bottom: 150px;
+}
+section.subscribe img.sub-bg {
+  z-index: -1;
+  position: absolute;
+}
+section.subscribe .subs-placeholder {
+  border-radius: 16px;
+  background-image: url("/assets/images/bg-subscribe.svg");
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 750px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+section.subscribe .subs-placeholder h3 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+section.subscribe .subs-placeholder p.subs-text {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #b0c3c9;
+  margin-bottom: 0;
+}
+section.subscribe .subs-placeholder .subs-form {
+  padding-top: 50px;
+}
+section.subscribe .subs-placeholder .subs-form input.email-form {
+  border-radius: 9px 0px 0px 9px !important;
+  border: none;
+}
+section.subscribe .subs-placeholder .subs-form input.email-form:focus {
+  outline: #ebfafc;
+  box-shadow: #ebfafc;
+}/*# sourceMappingURL=main.css.map */
