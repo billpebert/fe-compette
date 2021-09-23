@@ -1,4 +1,5 @@
 body {
+  max-width: 100%;
   background-color: $page-bg;
 
   nav {
@@ -31,6 +32,10 @@ body {
     font-size: 22px;
     font-weight: map-get($map: $font-weight, $key: regular);
     color: $dark;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 18px;
+    }
   }
 
   a.link-text {
@@ -56,5 +61,36 @@ body {
   ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: $grey !important;
+  }
+
+  h1 {
+    color: $light;
+    font-size: 65px;
+    font-weight: map-get($map: $font-weight, $key: semi-bold);
+    margin-bottom: 30px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 48px;
+    }
+  }
+
+  h2.heading {
+    color: $dark;
+    font-size: 48px;
+    font-weight: map-get($map: $font-weight, $key: semi-bold);
+    line-height: 65px;
+    @media only screen and (max-width: 600px) {
+      font-size: 38px;
+    }
+  }
+
+  h3 {
+    color: $light;
+    font-size: 26px;
+    font-weight: map-get($map: $font-weight, $key: medium);
+    text-align: center;
+    // @media only screen and (max-width: 600px) {
+    //   font-size: 18px;
+    // }
   }
 }

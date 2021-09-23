@@ -15,6 +15,7 @@
 }
 
 body {
+  max-width: 100%;
   background-color: #fafaff;
 }
 body nav {
@@ -42,6 +43,11 @@ body .std-text, body section.jobs .card-jobs .card-heading .title, section.jobs 
   font-size: 22px;
   font-weight: 400;
   color: #0f1d37;
+}
+@media only screen and (max-width: 600px) {
+  body .std-text, body section.jobs .card-jobs .card-heading .title, section.jobs .card-jobs .card-heading body .title, body section.intro ul.points li, section.intro ul.points body li {
+    font-size: 18px;
+  }
 }
 body a.link-text {
   font-size: 16px;
@@ -77,33 +83,66 @@ body ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #cacad2 !important;
 }
-
-img.hero-background {
-  width: 100%;
-  max-width: 1440px;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-}
-
-section.hero {
-  padding-top: 100px;
-  padding-bottom: 150px;
-}
-section.hero h1 {
+body h1 {
   color: #ffffff;
   font-size: 65px;
   font-weight: 600;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 600px) {
+  body h1 {
+    font-size: 48px;
+  }
+}
+body h2.heading {
+  color: #0f1d37;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 65px;
+}
+@media only screen and (max-width: 600px) {
+  body h2.heading {
+    font-size: 38px;
+  }
+}
+body h3 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-image img.hero-background {
+  max-width: 1440px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .hero-image img.hero-background {
+    max-width: 100%;
+  }
+}
+
+section.hero {
+  padding-top: 100px;
+}
 section.hero img.illustration {
   margin-top: 50px;
-  max-width: 725px;
-  height: 500px;
+  max-width: 100%;
+  width: 725px;
 }
-section.hero img.brand-partner {
+section.hero .brand-partner {
+  padding: 10px;
   margin-top: 50px;
-  max-width: 820px;
+}
+section.hero .brand-partner img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  section.hero {
+    padding-top: 75px;
+  }
 }
 
 section.intro {
@@ -129,7 +168,6 @@ section.jobs .card-jobs {
   border-radius: 16px;
   border: 0;
   padding: 30px;
-  margin-top: 70px;
 }
 section.jobs .card-jobs .card-heading img {
   max-width: 50px;
@@ -162,26 +200,19 @@ section.jobs .card-jobs .bg-sky-blue {
 
 section.subscribe {
   padding-bottom: 150px;
+  overflow: hidden;
 }
 section.subscribe img.sub-bg {
+  max-width: 100%;
   z-index: -1;
   position: absolute;
 }
 section.subscribe .subs-placeholder {
   border-radius: 16px;
-  background-image: url("/assets/images/bg-subscribe.svg");
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 100%;
   width: 750px;
   padding-top: 40px;
   padding-bottom: 50px;
-}
-section.subscribe .subs-placeholder h3 {
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 500;
-  text-align: center;
 }
 section.subscribe .subs-placeholder p.subs-text {
   font-size: 16px;

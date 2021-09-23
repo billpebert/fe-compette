@@ -1,31 +1,36 @@
-img.hero-background {
-  width: 100%;
-  max-width: 1440px;
-  z-index: -1;
-  position: absolute;
-  top: 0;
+.hero-image {
+  img.hero-background {
+    max-width: 1440px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    @media only screen and (max-width: 600px) {
+      max-width: 100%;
+      // height: 800px;
+    }
+  }
 }
 
 section.hero {
   padding-top: 100px;
-  padding-bottom: 150px;
-
-  h1 {
-    color: $light;
-    font-size: 65px;
-    font-weight: map-get($map: $font-weight, $key: semi-bold);
-    margin-bottom: 30px;
-  }
 
   img.illustration {
     margin-top: 50px;
-    max-width: 725px;
-    height: 500px;
+    max-width: 100%;
+    width: 725px;
   }
 
-  img.brand-partner {
+  .brand-partner {
+    padding: 10px;
     margin-top: 50px;
-    max-width: 820px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding-top: 75px;
   }
 }
 
@@ -56,7 +61,6 @@ section.jobs {
     border-radius: 16px;
     border: 0;
     padding: 30px;
-    margin-top: 70px;
 
     .card-heading {
       img {
@@ -98,28 +102,20 @@ section.jobs {
 
 section.subscribe {
   padding-bottom: 150px;
+  overflow: hidden;
   img.sub-bg {
+    max-width: 100%;
     z-index: -1;
     position: absolute;
   }
   .subs-placeholder {
     // background-color: $dark;
     border-radius: 16px;
-
-    background-image: url("/assets/images/bg-subscribe.svg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+    max-width: 100%;
     width: 750px;
 
     padding-top: 40px;
     padding-bottom: 50px;
-
-    h3 {
-      color: $light;
-      font-size: 26px;
-      font-weight: map-get($map: $font-weight, $key: medium);
-      text-align: center;
-    }
 
     p.subs-text {
       font-size: 16px;
