@@ -80,6 +80,7 @@ body ::-ms-input-placeholder {
 
 img.hero-background {
   width: 100%;
+  max-width: 1440px;
   z-index: -1;
   position: absolute;
   top: 0;
