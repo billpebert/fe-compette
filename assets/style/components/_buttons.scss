@@ -4,8 +4,17 @@
   border-radius: 56px;
 }
 
-.btn-yellow {
+.btn-cta-hero {
   @extend .btn-master;
   color: $dark-yellow;
   background-color: $yellow;
+}
+
+.btn-subscribe {
+  @extend .btn-cta-hero;
+  padding: 0px 25px !important;
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+    height: 40px;
+  }
 }

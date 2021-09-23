@@ -3,15 +3,25 @@
   font-family: "Asap", sans-serif;
 }
 
-.btn-master, .btn-yellow {
+.btn-master, .btn-cta-hero, .btn-subscribe {
   padding: 15px 50px;
   font-weight: 500;
   border-radius: 56px;
 }
 
-.btn-yellow {
+.btn-cta-hero, .btn-subscribe {
   color: #986121;
   background-color: #f2ad5f;
+}
+
+.btn-subscribe {
+  padding: 0px 25px !important;
+}
+@media only screen and (max-width: 600px) {
+  .btn-subscribe {
+    font-size: 12px;
+    height: 40px;
+  }
 }
 
 body {
@@ -92,6 +102,7 @@ body h1 {
 @media only screen and (max-width: 600px) {
   body h1 {
     font-size: 48px;
+    color: #10495c;
   }
 }
 body h2.heading {
@@ -113,14 +124,14 @@ body h3 {
 }
 
 .hero-image img.hero-background {
-  max-width: 1440px;
+  width: 1440px;
   z-index: -1;
   position: absolute;
   top: 0;
 }
 @media only screen and (max-width: 600px) {
   .hero-image img.hero-background {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -208,11 +219,12 @@ section.subscribe img.sub-bg {
   position: absolute;
 }
 section.subscribe .subs-placeholder {
-  border-radius: 16px;
+  background-image: url("/assets/images/bg-subscribe.svg");
+  background-repeat: no-repeat;
+  border-radius: 36px;
   max-width: 100%;
   width: 750px;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding: 40px 20px;
 }
 section.subscribe .subs-placeholder p.subs-text {
   font-size: 16px;
@@ -225,10 +237,17 @@ section.subscribe .subs-placeholder .subs-form {
   padding-top: 50px;
 }
 section.subscribe .subs-placeholder .subs-form input.email-form {
+  font-size: 16px;
   border-radius: 9px 0px 0px 9px !important;
   border: none;
+  height: 40px;
 }
 section.subscribe .subs-placeholder .subs-form input.email-form:focus {
   outline: #ebfafc;
   box-shadow: #ebfafc;
+}
+@media only screen and (max-width: 600px) {
+  section.subscribe .subs-placeholder .subs-form input.email-form {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
