@@ -124,15 +124,12 @@ body h3 {
 }
 
 .hero-image img.hero-background {
-  width: 1440px;
-  z-index: -1;
+  max-width: 1440px;
+  z-index: -99;
   position: absolute;
+  overflow: hidden;
   top: 0;
-}
-@media only screen and (max-width: 600px) {
-  .hero-image img.hero-background {
-    width: 100%;
-  }
+  margin-left: -120px;
 }
 
 section.hero {
@@ -182,7 +179,7 @@ section.jobs .card-jobs {
 }
 section.jobs .card-jobs .card-heading img {
   max-width: 50px;
-  padding-right: 15px;
+  padding-right: 16px;
 }
 section.jobs .card-jobs .card-heading .title {
   line-height: 25px;
@@ -207,6 +204,11 @@ section.jobs .card-jobs .bg-sky-blue {
   width: auto;
   border-radius: 6px;
   padding: 7px;
+}
+@media only screen and (max-width: 768px) {
+  section.jobs .card-jobs {
+    margin-bottom: 30px;
+  }
 }
 
 section.subscribe {
